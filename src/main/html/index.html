@@ -36,7 +36,7 @@
       if (url && url.length > 1) {
         url = decodeURIComponent(url[1]);
       } else {
-        url = "http://petstore.swagger.io/v2/swagger.json";
+        url = "/api/definition.json";
       }
 
       hljs.configure({
@@ -70,10 +70,11 @@
         onFailure: function(data) {
           log("Unable to Load SwaggerUI");
         },
-        docExpansion: "none",
-        jsonEditor: false,
+        docExpansion: "full",
+        jsonEditor: true,
+        sorter: 'method',
         defaultModelRendering: 'schema',
-        showRequestHeaders: false
+        showRequestHeaders: true
       });
 
       window.swaggerUi.load();
@@ -88,7 +89,7 @@
 </head>
 
 <body class="swagger-section">
-<div id='header'>
+<!-- <div id='header'>
   <div class="swagger-ui-wrap">
     <a id="logo" href="http://swagger.io"><img class="logo__img" alt="swagger" height="30" width="30" src="images/logo_small.png" /><span class="logo__title">swagger</span></a>
     <form id='api_selector'>
@@ -97,7 +98,7 @@
       <div class='input'><a id="explore" class="header__btn" href="#" data-sw-translate>Explore</a></div>
     </form>
   </div>
-</div>
+</div> -->
 
 <div id="message-bar" class="swagger-ui-wrap" data-sw-translate>&nbsp;</div>
 <div id="swagger-ui-container" class="swagger-ui-wrap"></div>

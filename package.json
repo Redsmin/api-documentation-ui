@@ -1,5 +1,5 @@
 {
-  "name": "swagger-ui",
+  "name": "redsmin-api-documentation-ui",
   "author": "Tony Tam <fehguy@gmail.com>",
   "contributors": [
     {
@@ -13,6 +13,7 @@
   "license": "Apache-2.0",
   "main": "dist/swagger-ui.js",
   "scripts": {
+    "post-install": "npm run build",
     "build": "gulp",
     "serve": "gulp serve",
     "prejshint": "gulp",

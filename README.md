@@ -1,4 +1,20 @@
-# Swagger UI
+# Redsmin API Documentation UI (Swagger UI fork)
+
+## NPM
+
+```
+npm i redsmin-api-documentation-ui -S
+```
+
+## HAPI Support
+
+```
+// will expose the documentation on /_docs
+require('redsmin-api-documentation-ui/hapi')(hapiServer);
+```
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 [![Build Status](https://travis-ci.org/swagger-api/swagger-ui.svg?branch=master)](https://travis-ci.org/swagger-api/swagger-ui)
 [![NPM version](https://badge.fury.io/js/swagger-ui.png)](http://badge.fury.io/js/swagger-ui)

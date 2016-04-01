@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/swagger-api/swagger-ui.git"
+    "url": "https://github.com/Redsmin/api-documentation-ui.git"
   },
   "readmeFilename": "README.md",
   "devDependencies": {
